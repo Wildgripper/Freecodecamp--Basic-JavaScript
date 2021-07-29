@@ -6,3 +6,4 @@ var myDog = {
   };
   
   myDog.name = "Happy Coder"
+  myDog.bark = "woof";
