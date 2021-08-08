@@ -1,7 +1,5 @@
 let myArray = [];
 
-let i = 5;
-while (i >= 0) {
+for (let i = 1; i <= 5; i++) {
   myArray.push(i);
-  i--;
 }
