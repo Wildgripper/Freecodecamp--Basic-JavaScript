@@ -1,12 +1,9 @@
-// Only change code below this line
-function countdown(n){
-    let array = [];
+function countdown(n) {
     if (n < 1) {
-        return array;
+        return [];
+    } else {
+        let countArray = countdown(n - 1);
+        countArray.unshift(n)
+        return countArray;
     }
-
-
-    
-    return;
-  }
-  // Only change code above this line
+}
