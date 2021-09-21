@@ -1,3 +1,3 @@
-let extractStr = "Extract the word 'coding' from this string.";
-let codingRegex = /coding/; 
-let result = extractStr.match(codingRegex); 
+let twinkleStar = "Twinkle, twinkle, little star";
+let starRegex = /twinkle/gi; 
+let result = twinkleStar.match(starRegex); 
