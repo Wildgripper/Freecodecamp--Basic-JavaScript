@@ -1,3 +1,3 @@
-let exampleStr = "Let's have fun with regular expressions!";
-let unRegex = /.un/; 
-let result = unRegex.test(exampleStr);
+let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/ig; 
+let result = quoteSample.match(vowelRegex); 
