@@ -1,3 +1,5 @@
-let difficultSpelling = "Mississippi";
-let myRegex = /s+/g; 
-let result = difficultSpelling.match(myRegex);
+let chewieQuote = 'Aaaaaaaaaaaaaaaarrrgh!';
+
+let chewieRegex = /Aa*/; 
+
+let result = chewieQuote.match(chewieRegex);
