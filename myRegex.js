@@ -1,3 +1,3 @@
-let movieName = "2001: A Space Odyssey";
-let noNumRegex = /\D/g; 
-let result = movieName.match(noNumRegex).length;
+let username = "JackOfAllTrades";
+let userCheck = /change/; 
+let result = userCheck.test(username);
