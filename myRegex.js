@@ -6,5 +6,5 @@ Usernames have to be at least two characters long. A two-character username can 
 */
 
 let username = "JackOfAllTrades";
-let userCheck = /change/; 
+let userCheck = /JackOfAllTrades/; 
 let result = userCheck.test(username);
