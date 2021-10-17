@@ -1,3 +1,3 @@
-let sample = "Whitespace is important in separating words";
-let countWhiteSpace = /\s/g; 
-let result = sample.match(countWhiteSpace);
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g;
+let result = hello.replace(wsRegex, "");
