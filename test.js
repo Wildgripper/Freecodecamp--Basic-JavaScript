@@ -1,7 +1,13 @@
-const pell = n => {
-    if (n <= 2)
-        return n;
-    return 2 * pell(n - 1) + pell(n - 2);
-}
+let obj = {
+    a: "foo",
+    b: 12,
+    c: "bar"
+};
 
-console.log(pell(7));
+let {
+    c,
+    a,
+    b
+} = obj;
+
+console.log(c);
