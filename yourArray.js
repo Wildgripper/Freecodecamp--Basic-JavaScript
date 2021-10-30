@@ -1,7 +1,5 @@
-function spreadOut() {
-  let fragment = ['to', 'code'];
-  let sentence = ['learning', ...fragment, 'is', 'fun']; 
-  return sentence;
+function quickCheck(arr, elem) {
+return arr.indexOf(elem) >= 0;
 }
 
-console.log(spreadOut());
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
