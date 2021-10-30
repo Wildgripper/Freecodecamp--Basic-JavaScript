@@ -1,10 +1,7 @@
-function copyMachine(arr, num) {
-  let newArr = [];
-  while (num >= 1) {
-    newArr.push([...arr]);
-    num--;
-  }
-  return newArr;
+function spreadOut() {
+  let fragment = ['to', 'code'];
+  let sentence = ['learning', ...fragment, 'is', 'fun']; 
+  return sentence;
 }
 
-console.log(copyMachine([true, false, true], 2));
+console.log(spreadOut());
