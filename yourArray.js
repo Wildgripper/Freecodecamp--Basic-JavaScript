@@ -1,7 +1,7 @@
-function popShift(arr) {
-    let popped = arr.pop(); 
-    let shifted = arr.shift(); 
-    return [shifted, popped];
-  }
-  
-  console.log(popShift(['challenge', 'is', 'not', 'complete']));
+function htmlColorNames(arr) {
+  let newColors = ['DarkSalmon', 'BlanchedAlmond'];
+  arr.splice(0, 2, newColors[0], newColors[1]);
+  return arr;
+}
+
+console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
