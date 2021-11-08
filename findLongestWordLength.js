@@ -2,8 +2,10 @@
 // Your response should be a number.
 
 function findLongestWordLength(str) {
-  let regEx = /(\w+)/;
-  console.log(str.match(regEx));
+  let regEx = /(\w+)/g;
+  let array = str.match(regEx);
+  console.log(array);
+  console.log(array.length);
 
 
     return str.length;
