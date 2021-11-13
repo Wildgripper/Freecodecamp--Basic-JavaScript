@@ -4,8 +4,8 @@
 function largestOfFour(arr) {
     let newArray = [];
     for (i = 0; i < arr.length; i++) {
-        // console.log(arr[i]);
-        // newArray.push(arr[i][0]);
+        console.log(arr[i]);
+        newArray.push(arr[i][0]);
         let maxNum = 0;
         for (let j = 0; j < arr[i].length; j++) {
             if (arr[i][j] > maxNum) {
