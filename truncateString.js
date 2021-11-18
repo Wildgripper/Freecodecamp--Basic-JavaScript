@@ -3,9 +3,12 @@
 
 function truncateString(str, num) {
 
-    str += "..."
-    console.log(str);
+    if(str.length > num) {
+        // console.log(str.slice(0, num) + "...");
+        return str.slice(0, num) + "...";
+    }
+    
     return str;
 }
 
-truncateString("A-tisket a-tasket A green and yellow basket", 8);
+truncateString("Peter Piper picked a peck of pickled peppers", 11)
