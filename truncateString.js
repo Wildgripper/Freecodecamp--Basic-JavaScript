@@ -2,6 +2,9 @@
 // Return the truncated string with a...ending.
 
 function truncateString(str, num) {
+
+    str += "..."
+    console.log(str);
     return str;
 }
 
