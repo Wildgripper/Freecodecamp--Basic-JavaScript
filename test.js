@@ -1,12 +1,18 @@
-// var SpaceShuttle = function (targetPlanet) {
-//     this.targetPlanet = targetPlanet;
-// }
+const origNum = 8;
+const origObj = {
+    color: 'blue'
+};
 
-class SpaceShuttle {
-    constructor(targetPlanet){
-        this.targetPlanet = targetPlanet;
-    }
-}
+const changeItUp = (num, obj) => {
+    num = 7;
+    obj.color = 'red';
+};
 
-var zeus = new SpaceShuttle('Jupiter');
-console.log(zeus.targetPlanet);
+changeItUp(origNum, origObj);
+
+// Will output 8 since integers are passed by value.
+console.log(origNum);
+
+// Will output 'red' since objects are passed 
+// by reference and are therefore mutable.
+console.log(origObj.color);
