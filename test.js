@@ -1,14 +1,16 @@
 const origNum = 8;
-const origObj = {
+let origObj = {
     color: 'blue'
 };
 
 const changeItUp = (num, obj) => {
     num = 7;
-    obj.color = 'red';
+    // obj.color = 'red';
+    obj = {};
 };
 
 changeItUp(origNum, origObj);
+origObj = {};
 
 // Will output 8 since integers are passed by value.
 console.log(origNum);
