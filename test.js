@@ -1,20 +1,8 @@
-const origNum = 8;
-let origObj = {
-    color: 'blue'
+let mobile = {
+    brand: 'Samsung',
+    model: 'Galaxy Note 9'
 };
 
-const changeItUp = (num, obj) => {
-    num = 7;
-    // obj.color = 'red';
-    obj = {};
-};
-
-changeItUp(origNum, origObj);
-origObj = {};
-
-// Will output 8 since integers are passed by value.
-console.log(origNum);
-
-// Will output 'red' since objects are passed 
-// by reference and are therefore mutable.
-console.log(origObj.color);
+for (let key in mobile) {
+    console.log(`${key}: ${mobile[key]}`);
+}
