@@ -1,8 +1,12 @@
-let mobile = {
-    brand: 'Samsung',
-    model: 'Galaxy Note 9'
+const myObj = {
+    data: 'abc',
+    loggerA: () => {
+        console.log(this.data);
+    },
+    loggerB() {
+        console.log(this.data);
+    },
 };
 
-for (let key in mobile) {
-    console.log(`${key}: ${mobile[key]}`);
-}
+myObj.loggerA();
+myObj.loggerB();
