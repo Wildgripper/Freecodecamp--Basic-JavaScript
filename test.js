@@ -1,12 +1,20 @@
-const myObj = {
-    data: 'abc',
-    loggerA: () => {
-        console.log(this.data);
+const myCat = {
+    _name: 'Snickers',
+    get name() {
+        return this._name
     },
-    loggerB() {
-        console.log(this.data);
-    },
-};
+    set name(newName) {
+        //Verify that newName is a non-empty string before setting as name property
+        if (typeof newName === 'string' && newName.length > 0) {
+            this._name = newName;
+        } else {
+            console.log("ERROR: name must be a non-empty string");
+        }
+    }
+}
 
-myObj.loggerA();
-myObj.loggerB();
+// Reference invokes the getter
+console.log(myCat.name);
+
+// Assignment invokes the setter
+myCat.name = 'Yankee';
