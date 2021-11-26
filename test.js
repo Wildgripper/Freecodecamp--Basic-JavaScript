@@ -1,20 +1,13 @@
-const myCat = {
-    _name: 'Snickers',
-    get name() {
-        return this._name
-    },
-    set name(newName) {
-        //Verify that newName is a non-empty string before setting as name property
-        if (typeof newName === 'string' && newName.length > 0) {
-            this._name = newName;
-        } else {
-            console.log("ERROR: name must be a non-empty string");
+const monsterFactory = (name, age, energySource, catchPhrase) => {
+    return {
+        name: name,
+        age: age,
+        energySource: energySource,
+        scare() {
+            console.log(catchPhrase);
         }
     }
-}
+};
 
-// Reference invokes the getter
-console.log(myCat.name);
-
-// Assignment invokes the setter
-myCat.name = 'Yankee';
+const ghost = monsterFactory('Ghouly', 251, 'ectoplasm', 'BOO!');
+ghost.scare(); // 'BOO!'
