@@ -11,3 +11,12 @@ const monsterFactory = (name, age, energySource, catchPhrase) => {
 
 const ghost = monsterFactory('Ghouly', 251, 'ectoplasm', 'BOO!');
 ghost.scare(); // 'BOO!'
+
+// Property Value Shorthand
+
+const monsterFactory = (name, age) => {
+  return { 
+    name,
+    age 
+  }
+};
