@@ -1,22 +1,20 @@
-const monsterFactory = (name, age, energySource, catchPhrase) => {
-    return {
-        name: name,
-        age: age,
-        energySource: energySource,
-        scare() {
-            console.log(catchPhrase);
-        }
-    }
+let spaceship = {
+  homePlanet: 'Earth',
+  color: 'red'
 };
 
-const ghost = monsterFactory('Ghouly', 251, 'ectoplasm', 'BOO!');
-ghost.scare(); // 'BOO!'
-
-// Property Value Shorthand
-
-const monsterFactory = (name, age) => {
-  return { 
-    name,
-    age 
+let tryReassignment = obj => {
+  obj = {
+    identified: false,
+    'transport type': 'flying'
   }
+  console.log(obj) // Prints {'identified': false, 'transport type': 'flying'}
 };
+
+tryReassignment(spaceship) // The attempt at reassignment does not work.
+spaceship // Still returns {homePlanet : 'Earth', color : 'red'};
+
+spaceship = {
+  identified: false,
+  'transport type': 'flying'
+}; // Regular reassignment still works.
