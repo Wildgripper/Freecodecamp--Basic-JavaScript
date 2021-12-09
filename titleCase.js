@@ -2,6 +2,8 @@
 // For the purpose of this exercise, you should also capitalize connecting words like the and of.
 
 function titleCase(str) {
+  let regex = /(\b[^\s]+\b)/;
+
   return str;
 }
 
